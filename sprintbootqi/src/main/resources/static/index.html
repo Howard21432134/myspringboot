@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+    <script src="../../java/sc/tig.java">
+        var file="";
+        var N = 0;
+        var quantity = 0;
+        function start() {
+            file=document.getElementById('file').value;
+            N=parseInt(document.getElementById('N').value);
+            quantity=parseInt(document.getElementById('quantity').value);
+            var result = document.getElementById('result');
+            result.innerText = N+3;
+        }
+    </script>
+</head>
+<body>
+<div>
+    <input type="text" id="file">
+    <input type="text" id="N">
+    <input type="text" id="quantity">
+    <button onclick="start()">计算</button>
+    <p id="result">结果</p>
+</div>
+</body>
+</html>
